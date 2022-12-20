@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+:root{
+    /*### Primary*/
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    /*### Neutral*/
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+body{
+    font-family: 'Inter', sans-serif;
+    color: var(--Very-dark-blue);
+    background-color: var(--Off-white);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--Very-dark-blue);
+}
+
+/******************main section********/
+
+#main-section button{
+  border: none;
+  background-color: var(--Very-dark-blue);
+  color: var(--Off-white);
+  padding: 1rem 2rem;
+}
+
+
+
+
+
+
+aside{
+    background-color: var(--Very-dark-blue);
+    color: var(--Off-white);
+    width: 30%;
+    padding: 0.5rem;
+}
+
+aside h2{
+    color: var(--Soft-orange);
+}
+
+/*****************related-news******************/
+#related-news>*{
+    width: 30%;
+}

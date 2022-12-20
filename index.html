@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,18 +15,21 @@
   </style>
 </head>
 <body>
-  
+  <!--navbar section-->
   <nav>
     <img src="./assets/images/logo.svg" alt="logo">
     <ul>
-      <li>Home</li>
-      <li>New</li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#">New</a></li>
       <li>Popular</li>
       <li>Trending</li>
       <li>Categories</li>
     </ul>
   </nav>
-  <section>
+
+  <!-- main section -->
+
+  <section id="main-section">
     <img src="./assets/images/image-web-3-desktop.jpg" alt="image-web-3-desktop">
     <h1>The Bright Future of Web 3.0?</h1>
     <p>  
@@ -35,8 +38,11 @@
     </p>
     <button>Read more</button>
   </section>
+
+  <!--side bar-->
+
   <aside>  
-    <h2>New </h2>
+    <h2>New</h2>
     <div>
       <h4>Hydrogen VS Electric Cars</h4>
       <p>
@@ -56,7 +62,10 @@
       </p>
     </div>
   </aside>
-  <section>
+  
+  <!--related news-->
+
+  <section id="related-news">
     <div>
       <img src="./assets/images/image-retro-pcs.jpg" alt="retro">
       <div>
@@ -70,7 +79,7 @@
       </div>
     </div>
     <div>
-      <img src="" alt="">
+      <img src="./assets/images/image-top-laptops.jpg" alt="">
       <div>
         <span>
           02
@@ -84,7 +93,7 @@
       </div>
     </div>
     <div>
-      <img src="" alt="">
+      <img src="./assets/images/image-gaming-growth.jpg" alt="image-gaming-growth>
       <div>
         <span>
           03
