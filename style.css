@@ -21,6 +21,7 @@ body{
     font-family: 'Inter', sans-serif;
     color: var(--Very-dark-blue);
     background-color: var(--Off-white);
+    padding: 3rem 5rem;
 }
 ul{
     list-style: none;
@@ -29,17 +30,61 @@ a{
     text-decoration: none;
     color: var(--Very-dark-blue);
 }
+/********************navbar***********/
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
 
+ul {
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}
+ p{
+    font-weight:lighter;
+    font-size: 13px;
+    line-height: 1.8;
+    
+}
+/************main grid****************/
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
 /******************main section********/
-
+#main-section{
+    grid-column: 1 / 3;
+}
+#main-section img{
+    width: 100%;
+}
 #main-section button{
   border: none;
   background-color: var(--Very-dark-blue);
   color: var(--Off-white);
   padding: 1rem 2rem;
 }
-
-
+#description{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+#description h1{
+    font-size: 3rem;
+}
+#description>*{
+    flex: 1;
+}
+#description div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 
 
@@ -47,8 +92,10 @@ a{
 aside{
     background-color: var(--Very-dark-blue);
     color: var(--Off-white);
-    width: 30%;
-    padding: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 aside h2{
@@ -56,6 +103,28 @@ aside h2{
 }
 
 /*****************related-news******************/
-#related-news>*{
-    width: 30%;
+#related-news{
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+}
+#related-news>div{
+    display: flex;
+    gap: 1rem;
+    
+}
+#related-news img{
+    width: 100px;
+}
+#related-news p{
+    line-height: 1;
+}
+span{
+    color: var(--Grayish-blue);
+    font-size: 3rem;
+}
+.item-side>*{
+    padding-top: .5rem;
 }
