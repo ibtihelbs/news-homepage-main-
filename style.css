@@ -50,6 +50,18 @@ ul {
     line-height: 1.8;
     
 }
+ h4:hover, h5:hover, li:hover,button:hover{
+    cursor: pointer;
+}
+li:hover, a:hover, h5:hover{
+  color: var(--Soft-red);
+}
+h4:hover{
+  color: var(--Soft-orange);
+}
+button:hover{
+    background-color: var(--Very-dark-blue) !important;
+}
 /************main grid****************/
 main{
     display: grid;
@@ -65,9 +77,11 @@ main{
 }
 #main-section button{
   border: none;
-  background-color: var(--Very-dark-blue);
+  background-color: var(--Soft-red);
   color: var(--Off-white);
   padding: 1rem 2rem;
+  align-self:flex-start;
+  font-weight: 800;
 }
 #description{
     display: flex;
