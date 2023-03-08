@@ -142,3 +142,24 @@ span{
 .item-side>*{
     padding-top: .5rem;
 }
+
+@media (max-width: 900px){
+    main{
+      grid-template-columns:1fr;
+      gap: 1;
+    } 
+    #main-section {
+  grid-column: 1 / 2;
+}
+    #description {
+  
+  flex-direction: column;
+  padding: 1rem;
+}
+    #related-news {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+}
